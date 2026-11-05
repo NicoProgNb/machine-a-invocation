@@ -26,15 +26,15 @@
 
                 <!-- Select - créature-->
                 <label for="pet-select"></label>
-                <select name="pets" id="pet-select" required>
-                    <option value="choix" hidden>Choisis une créature</option>
+                <select name="creature" id="creature" required>
+                    <option value="" hidden>Choisis une créature</option>
                     <option value="chatOcto">🐙 Le Chat-Octo</option>
                     <option value="dragonDebug">🐉 Le Dragon-Debug</option>
                     <option value="licorneCss">🦄 La Licorne CSS</option>
                     <option value="renardRefacto">🦊 Le Renard-Refacto</option>
                 </select>
 
-                <button type="button">👾 Invoquer 👾</button>
+                <button type="submit" id="invoquer">👾 Invoquer 👾</button>
 
             </form>
         </section>
@@ -42,6 +42,7 @@
         <!-- Ecran Resultat -->
         <section id="ecranResultat" class="cache">
             <p id="message"></p>
+            <button type="button" id="recommencer">Recommencer</button>
         </section>
     </main>
 
