@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La machine à invocation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <h1>La Machina de la invocation</h1>
+    </header>
+
+    <main>
+        <!-- Ecran Formulaire -->
+        <section id="ecranFormulaire">
+
+            <!-- Formulaire - invocation -->
+            <form action="" method="get" id="invocation">
+                <!-- Input - prénom-->
+                <label for="prenom">C'est quoi ton p'tit prénom ? </label>
+                <input type="text" name="prenom" id="prenom" required />
+
+                <!-- Select - créature-->
+                <label for="pet-select"></label>
+                <select name="pets" id="pet-select">
+                    <option value="choix" hidden>Choisis une créature</option>
+                    <option value="chatOcto">🐙 Le Chat-Octo</option>
+                    <option value="dragonDebug">🐉 Le Dragon-Debug</option>
+                    <option value="licorneCss">🦄 La Licorne CSS</option>
+                    <option value="renardRefacto">🦊 Le Renard-Refacto</option>
+                </select>
+
+                <button type="button">Invoquer</button>
+
+            </form>
+        </section>
+
+        <!-- Ecran Resultat -->
+        <section id="ecranResultat" class="cache">
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Nico</p>
+    </footer>
+
+</body>
+</html>
