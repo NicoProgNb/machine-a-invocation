@@ -73,6 +73,21 @@ button {
     font-weight: 600;
 }
 
+/* Mise en page ecranResultat */
+
+#ecranResultat p {
+    text-align: center;
+}
+
+#messageEmoji {
+    font-size: 8rem;
+}
+
+#parentRecommencer {
+    display: flex;
+    justify-content: center;
+}
+
 /* Footer */
 footer p {
     text-align: end;

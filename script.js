@@ -42,22 +42,22 @@ formInvocation.addEventListener('submit', function(event) {
     // switch/case = execution en fonction de la valeur
   let emoji = ""
   switch (creatureValue) {
-    case "chat-Octo":
-      emoji = "🐙"
+    case "PoulpiSushi":
+      emoji = "🍣"
       break
-    case "dragon-Debug":
+    case "Dragking":
       emoji = "🐉"
       break
-    case "licorne-Css":
-      emoji = "🦄"
+    case "HelloMonkey":
+      emoji = "🙉"
       break
-    case "renard-Refacto":
-      emoji = "🦊"
+    case "Piou":
+      emoji = "🐣"
       break
   }
 
     // Contenu dans #message
-    message.textContent = `${prenomValue}, ${creatureValue} a entendu ton appel et te suivra tout le Bloc 1 !`
+    message.innerHTML = `Super <strong>${prenomValue}</strong> ! <strong>${creatureValue}</strong> a évolué et te suivra tout le Bloc 1 !`
 
     // Contenu dans #messageEmoji
     messageEmoji.textContent = emoji
