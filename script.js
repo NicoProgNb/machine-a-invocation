@@ -57,6 +57,7 @@ formInvocation.addEventListener('submit', function(event) {
   }
 
     // Contenu dans #message
+    // Choix du .inneHTML plutôt que TextContent : Ajout de balises strong
     message.innerHTML = `Super <strong>${prenomValue}</strong> ! <strong>${creatureValue}</strong> a évolué et te suivra tout le Bloc 1 !`
 
     // Contenu dans #messageEmoji
